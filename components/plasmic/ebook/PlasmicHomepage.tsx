@@ -394,7 +394,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                   sty.text__kjbni
                                 )}
                               >
-                                {"Indique ton email pour te l'envoyer :"}
+                                {"Indique ton email pour le recevoir :"}
                               </div>
                             </p.Stack>
                           </div>
