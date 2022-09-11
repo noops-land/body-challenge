@@ -442,6 +442,7 @@ function PlasmicHomepage__RenderFunc(props: {
                             />
                           ) : null
                         }
+                        name={"email" as const}
                         placeholder={"email" as const}
                         required={true}
                         showEndIcon={true}
