@@ -608,6 +608,8 @@
   flex-direction: column;
   display: flex;
   width: 100%;
+  padding-bottom: 0px;
+  padding-left: 0px;
   min-width: 0;
 }
 .freeBox___4Cq3M > :global(.__wab_flex-container) {
@@ -642,6 +644,18 @@
     font-size: 45px;
     line-height: 1em;
     text-align: center;
+  }
+}
+.text__abXig {
+  font-size: 28px;
+  color: #ffffffd9;
+  text-align: left;
+  line-height: 28px;
+  font-weight: 500;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__abXig {
+    font-size: 16px;
   }
 }
 .freeBox__cnzEv {

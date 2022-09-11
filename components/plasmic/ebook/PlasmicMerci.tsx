@@ -382,6 +382,18 @@ function PlasmicMerci__RenderFunc(props: {
                               >
                                 {"Merci !"}
                               </h1>
+
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__abXig
+                                )}
+                              >
+                                {
+                                  "Tu vas bientôt recevoir ton e-book \ndans ta boîte mail"
+                                }
+                              </div>
                             </p.Stack>
                           </div>
                         ) : null}

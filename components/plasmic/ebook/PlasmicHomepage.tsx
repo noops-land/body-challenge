@@ -413,7 +413,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       data-plasmic-override={overrides.form}
                       hasGap={true}
                       action={
-                        "https://bodychallenge.cloudcall.fr/webhook-test/ebook" as const
+                        "https://bodychallenge.cloudcall.fr/webhook/ebook" as const
                       }
                       className={classNames(projectcss.all, sty.form)}
                       method={"post" as const}
