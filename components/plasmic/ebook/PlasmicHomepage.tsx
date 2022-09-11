@@ -55,15 +55,19 @@ export type PlasmicHomepage__VariantsArgs = {};
 type VariantPropType = keyof PlasmicHomepage__VariantsArgs;
 export const PlasmicHomepage__VariantProps = new Array<VariantPropType>();
 
-export type PlasmicHomepage__ArgsType = {};
+export type PlasmicHomepage__ArgsType = {
+  validEmail?: boolean;
+};
+
 type ArgPropType = keyof PlasmicHomepage__ArgsType;
-export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
+export const PlasmicHomepage__ArgProps = new Array<ArgPropType>("validEmail");
 
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   foreground2?: p.Flex<"div">;
   form?: p.Flex<"form">;
   textInput?: p.Flex<typeof TextInput>;
+  validIcon?: p.Flex<"svg">;
   button?: p.Flex<typeof Button>;
   textbox?: p.Flex<typeof TextInput>;
 };
@@ -83,8 +87,9 @@ function PlasmicHomepage__RenderFunc(props: {
   const args = React.useMemo(
     () =>
       Object.assign(
-        {},
-
+        {
+          validEmail: false
+        },
         props.args
       ),
     [props.args]
@@ -407,7 +412,9 @@ function PlasmicHomepage__RenderFunc(props: {
                       data-plasmic-name={"form"}
                       data-plasmic-override={overrides.form}
                       hasGap={true}
-                      action={"https://bodychallenge.noops.land/email" as const}
+                      action={
+                        "https://bodychallenge.cloudcall.fr/webhook-test/ebook" as const
+                      }
                       className={classNames(projectcss.all, sty.form)}
                       method={"post" as const}
                     >
@@ -415,9 +422,40 @@ function PlasmicHomepage__RenderFunc(props: {
                         data-plasmic-name={"textInput"}
                         data-plasmic-override={overrides.textInput}
                         className={classNames("__wab_instance", sty.textInput)}
+                        endIcon={
+                          (() => {
+                            try {
+                              return $props.validEmail;
+                            } catch (e) {
+                              if (e instanceof TypeError) {
+                                return true;
+                              }
+                              throw e;
+                            }
+                          })() ? (
+                            <ChecksvgIcon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__sd1N1
+                              )}
+                              role={"img"}
+                            />
+                          ) : null
+                        }
                         placeholder={"email" as const}
                         required={true}
                         showEndIcon={true}
+                        startIcon={
+                          <SearchsvgIcon
+                            data-plasmic-name={"validIcon"}
+                            data-plasmic-override={overrides.validIcon}
+                            className={classNames(
+                              projectcss.all,
+                              sty.validIcon
+                            )}
+                            role={"img"}
+                          />
+                        }
                       />
 
                       <Button
@@ -466,10 +504,26 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "foreground2", "form", "textInput", "textbox", "button"],
-  foreground2: ["foreground2", "form", "textInput", "textbox", "button"],
-  form: ["form", "textInput", "textbox", "button"],
-  textInput: ["textInput", "textbox"],
+  root: [
+    "root",
+    "foreground2",
+    "form",
+    "textInput",
+    "textbox",
+    "validIcon",
+    "button"
+  ],
+  foreground2: [
+    "foreground2",
+    "form",
+    "textInput",
+    "textbox",
+    "validIcon",
+    "button"
+  ],
+  form: ["form", "textInput", "textbox", "validIcon", "button"],
+  textInput: ["textInput", "textbox", "validIcon"],
+  validIcon: ["validIcon"],
   button: ["button"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -480,6 +534,7 @@ type NodeDefaultElementType = {
   foreground2: "div";
   form: "form";
   textInput: typeof TextInput;
+  validIcon: "svg";
   button: typeof Button;
 };
 
@@ -547,6 +602,7 @@ export const PlasmicHomepage = Object.assign(
     foreground2: makeNodeComponent("foreground2"),
     form: makeNodeComponent("form"),
     textInput: makeNodeComponent("textInput"),
+    validIcon: makeNodeComponent("validIcon"),
     button: makeNodeComponent("button"),
 
     // Metadata about props expected for PlasmicHomepage

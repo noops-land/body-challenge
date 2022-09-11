@@ -158,6 +158,11 @@ function PlasmicTextInput__RenderFunc(props: {
             "isDisabled",
             "isDisabled"
           ),
+          [sty.rootshowEndIcon]: hasVariant(
+            variants,
+            "showEndIcon",
+            "showEndIcon"
+          ),
           [sty.rootshowStartIcon]: hasVariant(
             variants,
             "showStartIcon",
@@ -230,6 +235,11 @@ function PlasmicTextInput__RenderFunc(props: {
             variants,
             "isDisabled",
             "isDisabled"
+          ),
+          [sty.inputshowEndIcon]: hasVariant(
+            variants,
+            "showEndIcon",
+            "showEndIcon"
           ),
           [sty.inputshowStartIcon]: hasVariant(
             variants,
