@@ -68,6 +68,19 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "button"
+        },
+        {
+          "id": "dbQA7aKj93t",
+          "name": "Merci",
+          "type": "managed",
+          "projectId": "gBGqaUF3C5CQvEpDAhmCMe",
+          "renderModuleFilePath": "plasmic/ebook/PlasmicMerci.tsx",
+          "importSpec": {
+            "modulePath": "../pages/merci.tsx"
+          },
+          "cssFilePath": "plasmic/ebook/PlasmicMerci.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
