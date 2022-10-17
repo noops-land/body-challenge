@@ -162,8 +162,8 @@ function PlasmicHomepage__RenderFunc(props: {
                           className={classNames(sty.img)}
                           displayHeight={
                             hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? ("150px" as const)
-                              : ("150px" as const)
+                              ? ("100px" as const)
+                              : ("100px" as const)
                           }
                           displayMaxHeight={"none" as const}
                           displayMaxWidth={"none" as const}
@@ -514,7 +514,15 @@ function PlasmicHomepage__RenderFunc(props: {
                                 sty.button
                               )}
                             >
-                              {"Valider"}
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__ahgJx
+                                )}
+                              >
+                                {"Valider"}
+                              </div>
                             </Button>
                           </p.Stack>
                         </p.Stack>

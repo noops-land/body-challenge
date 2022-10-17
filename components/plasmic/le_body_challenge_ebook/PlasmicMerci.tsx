@@ -164,11 +164,7 @@ function PlasmicMerci__RenderFunc(props: {
                           data-plasmic-override={overrides.img}
                           alt={"LE BODY CHALLENGE" as const}
                           className={classNames(sty.img)}
-                          displayHeight={
-                            hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? ("150px" as const)
-                              : ("150px" as const)
-                          }
+                          displayHeight={"100px" as const}
                           displayMaxHeight={"none" as const}
                           displayMaxWidth={"none" as const}
                           displayMinHeight={"0" as const}

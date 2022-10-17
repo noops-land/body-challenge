@@ -190,12 +190,12 @@
 }
 .img {
   position: relative;
-  height: 150px;
+  height: 100px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .img {
     margin-top: calc(200px + 8px) !important;
-    height: 150px;
+    height: 100px;
   }
 }
 .freeBox__hXzTj {
@@ -724,6 +724,9 @@
   width: 1em;
   height: 1em;
 }
+.text__ahgJx {
+  font-family: "Raleway", sans-serif;
+}
 .svg___9Btcq {
   position: relative;
   object-fit: cover;
@@ -804,6 +807,7 @@
   font-size: 14px;
   margin-top: calc(0px + 32px) !important;
   margin-bottom: 0px;
+  font-family: "Raleway", sans-serif;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .text__xI0D0 {
