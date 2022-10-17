@@ -166,8 +166,8 @@ function PlasmicMerci__RenderFunc(props: {
                           className={classNames(sty.img)}
                           displayHeight={
                             hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? ("200px" as const)
-                              : ("231px" as const)
+                              ? ("150px" as const)
+                              : ("150px" as const)
                           }
                           displayMaxHeight={"none" as const}
                           displayMaxWidth={"none" as const}
