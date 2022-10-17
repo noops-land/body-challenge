@@ -521,7 +521,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                   sty.text__ahgJx
                                 )}
                               >
-                                {"Valider"}
+                                {"Recevoir mon e-book fitness"}
                               </div>
                             </Button>
                           </p.Stack>
