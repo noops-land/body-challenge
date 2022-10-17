@@ -24,7 +24,7 @@
     {
       "projectId": "gBGqaUF3C5CQvEpDAhmCMe",
       "projectApiToken": "P3iesz4T4wSJo8oli5TDXE51CdXZjcJKRW4V3f6GDvZsk5F2A8ehYNerwpZIy3LbSadb7dYpHs0QLfKQw7g",
-      "projectName": "ebook",
+      "projectName": "Le Body Challenge Ebook",
       "version": "latest",
       "cssFilePath": "plasmic/ebook/plasmic_ebook.module.css",
       "components": [
@@ -70,15 +70,15 @@
           "plumeType": "button"
         },
         {
-          "id": "dbQA7aKj93t",
+          "id": "CGcqI8E5JWs",
           "name": "Merci",
           "type": "managed",
           "projectId": "gBGqaUF3C5CQvEpDAhmCMe",
-          "renderModuleFilePath": "plasmic/ebook/PlasmicMerci.tsx",
+          "renderModuleFilePath": "plasmic/le_body_challenge_ebook/PlasmicMerci.tsx",
           "importSpec": {
             "modulePath": "../pages/merci.tsx"
           },
-          "cssFilePath": "plasmic/ebook/PlasmicMerci.module.css",
+          "cssFilePath": "plasmic/le_body_challenge_ebook/PlasmicMerci.module.css",
           "scheme": "blackbox",
           "componentType": "page"
         }

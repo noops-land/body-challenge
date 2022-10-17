@@ -4,7 +4,7 @@ import * as React from "react";
 import * as ph from "@plasmicapp/host";
 
 import { ScreenVariantProvider } from "../components/plasmic/ebook/PlasmicGlobalVariant__Screen";
-import { PlasmicMerci } from "../components/plasmic/ebook/PlasmicMerci";
+import { PlasmicMerci } from "../components/plasmic/le_body_challenge_ebook/PlasmicMerci";
 import { useRouter } from "next/router";
 
 function Merci() {
@@ -25,7 +25,10 @@ function Merci() {
   // Next.js Custom App component
   // (https://nextjs.org/docs/advanced-features/custom-app).
   return (
-    <ph.PageParamsProvider params={useRouter().query} query={useRouter().query}>
+    <ph.PageParamsProvider
+      params={useRouter()?.query}
+      query={useRouter()?.query}
+    >
       <PlasmicMerci />
     </ph.PageParamsProvider>
   );
