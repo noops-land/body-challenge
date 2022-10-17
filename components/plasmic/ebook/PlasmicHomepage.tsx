@@ -64,7 +64,9 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>("validEmail");
 
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
+  img?: p.Flex<typeof p.PlasmicImg>;
   foreground2?: p.Flex<"div">;
+  h1?: p.Flex<"h1">;
   form?: p.Flex<"form">;
   textInput?: p.Flex<typeof TextInput>;
   validIcon?: p.Flex<"svg">;
@@ -95,7 +97,10 @@ function PlasmicHomepage__RenderFunc(props: {
     [props.args]
   );
 
-  const $props = args;
+  const $props = {
+    ...args,
+    ...variants
+  };
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsojSgcPkSvUubm()
@@ -150,16 +155,29 @@ function PlasmicHomepage__RenderFunc(props: {
                           sty.freeBox__esLEg
                         )}
                       >
-                        <h1
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.h1,
-                            projectcss.__wab_text,
-                            sty.h1___8UM30
-                          )}
-                        >
-                          {"Le Body Challenge"}
-                        </h1>
+                        <p.PlasmicImg
+                          data-plasmic-name={"img"}
+                          data-plasmic-override={overrides.img}
+                          alt={"LE BODY CHALLENGE" as const}
+                          className={classNames(sty.img)}
+                          displayHeight={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? ("200px" as const)
+                              : ("231px" as const)
+                          }
+                          displayMaxHeight={"none" as const}
+                          displayMaxWidth={"none" as const}
+                          displayMinHeight={"0" as const}
+                          displayMinWidth={"0" as const}
+                          displayWidth={"auto" as const}
+                          loading={"eager" as const}
+                          src={{
+                            src: "/plasmic/ebook/images/bodyChallengeLogopng.png",
+                            fullWidth: 406,
+                            fullHeight: 378,
+                            aspectRatio: undefined
+                          }}
+                        />
                       </p.Stack>
 
                       <p.Stack
@@ -170,182 +188,186 @@ function PlasmicHomepage__RenderFunc(props: {
                           sty.freeBox__hXzTj
                         )}
                       >
-                        <p.Stack
-                          as={"div"}
-                          hasGap={true}
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__pnHe4
-                          )}
-                        >
-                          <p.PlasmicLink
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.a,
-                              sty.link__dIgov
-                            )}
-                            component={Link}
-                            platform={"nextjs"}
-                          >
-                            {false ? (
-                              <svg
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.svg__oDne
-                                )}
-                                role={"img"}
-                              />
-                            ) : null}
-                            {false ? (
-                              <svg
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.svg__t2O32
-                                )}
-                                role={"img"}
-                              />
-                            ) : null}
-
-                            <PlayingCardHeartShapesvgIcon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__oKxsZ
-                              )}
-                              role={"img"}
-                            />
-                          </p.PlasmicLink>
-
+                        {true ? (
                           <p.Stack
                             as={"div"}
                             hasGap={true}
                             className={classNames(
                               projectcss.all,
-                              sty.freeBox__hsq8Y
+                              sty.freeBox__pnHe4
                             )}
                           >
-                            {false ? (
-                              <svg
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.svg__kNjG
-                                )}
-                                role={"img"}
-                              />
-                            ) : null}
-
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__xkXGi
-                              )}
-                            >
-                              {"32k Likes "}
-                            </div>
-
                             <p.PlasmicLink
                               className={classNames(
                                 projectcss.all,
                                 projectcss.a,
-                                sty.link__aCiKy
+                                sty.link__dIgov
                               )}
                               component={Link}
                               platform={"nextjs"}
                             >
-                              <BlackCommentsBubbleSvgrepoComsvgIcon
+                              {false ? (
+                                <svg
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.svg__oDne
+                                  )}
+                                  role={"img"}
+                                />
+                              ) : null}
+                              {false ? (
+                                <svg
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.svg__t2O32
+                                  )}
+                                  role={"img"}
+                                />
+                              ) : null}
+
+                              <PlayingCardHeartShapesvgIcon
                                 className={classNames(
                                   projectcss.all,
-                                  sty.svg__yiY9V
+                                  sty.svg__oKxsZ
                                 )}
                                 role={"img"}
                               />
-
-                              {false ? (
-                                <svg
-                                  className={classNames(
-                                    projectcss.all,
-                                    sty.svg__anrEg
-                                  )}
-                                  role={"img"}
-                                />
-                              ) : null}
-                              {false ? (
-                                <svg
-                                  className={classNames(
-                                    projectcss.all,
-                                    sty.svg__t1EhT
-                                  )}
-                                  role={"img"}
-                                />
-                              ) : null}
                             </p.PlasmicLink>
 
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__h4QkP
-                              )}
-                            >
-                              {"312 Commentaires"}
-                            </div>
-
-                            {false ? (
-                              <svg
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.svg___2Eqmc
-                                )}
-                                role={"img"}
-                              />
-                            ) : null}
                             {true ? (
-                              <div
+                              <p.Stack
+                                as={"div"}
+                                hasGap={true}
                                 className={classNames(
                                   projectcss.all,
-                                  sty.freeBox__eR728
+                                  sty.freeBox__hsq8Y
                                 )}
                               >
+                                {false ? (
+                                  <svg
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.svg__kNjG
+                                    )}
+                                    role={"img"}
+                                  />
+                                ) : null}
+
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__xkXGi
+                                  )}
+                                >
+                                  {"32k Likes "}
+                                </div>
+
                                 <p.PlasmicLink
                                   className={classNames(
                                     projectcss.all,
                                     projectcss.a,
-                                    sty.link__ugn7O
+                                    sty.link__aCiKy
                                   )}
                                   component={Link}
                                   platform={"nextjs"}
                                 >
-                                  {false ? (
-                                    <svg
-                                      className={classNames(
-                                        projectcss.all,
-                                        sty.svg__bhFaq
-                                      )}
-                                      role={"img"}
-                                    />
-                                  ) : null}
-                                  {false ? (
-                                    <svg
-                                      className={classNames(
-                                        projectcss.all,
-                                        sty.svg__mu9Ck
-                                      )}
-                                      role={"img"}
-                                    />
-                                  ) : null}
-
-                                  <svg
+                                  <BlackCommentsBubbleSvgrepoComsvgIcon
                                     className={classNames(
                                       projectcss.all,
-                                      sty.svg__sz5Gv
+                                      sty.svg__yiY9V
                                     )}
                                     role={"img"}
                                   />
+
+                                  {false ? (
+                                    <svg
+                                      className={classNames(
+                                        projectcss.all,
+                                        sty.svg__anrEg
+                                      )}
+                                      role={"img"}
+                                    />
+                                  ) : null}
+                                  {false ? (
+                                    <svg
+                                      className={classNames(
+                                        projectcss.all,
+                                        sty.svg__t1EhT
+                                      )}
+                                      role={"img"}
+                                    />
+                                  ) : null}
                                 </p.PlasmicLink>
-                              </div>
+
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__h4QkP
+                                  )}
+                                >
+                                  {"312 Commentaires"}
+                                </div>
+
+                                {false ? (
+                                  <svg
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.svg___2Eqmc
+                                    )}
+                                    role={"img"}
+                                  />
+                                ) : null}
+                                {true ? (
+                                  <div
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.freeBox__eR728
+                                    )}
+                                  >
+                                    <p.PlasmicLink
+                                      className={classNames(
+                                        projectcss.all,
+                                        projectcss.a,
+                                        sty.link__ugn7O
+                                      )}
+                                      component={Link}
+                                      platform={"nextjs"}
+                                    >
+                                      {false ? (
+                                        <svg
+                                          className={classNames(
+                                            projectcss.all,
+                                            sty.svg__bhFaq
+                                          )}
+                                          role={"img"}
+                                        />
+                                      ) : null}
+                                      {false ? (
+                                        <svg
+                                          className={classNames(
+                                            projectcss.all,
+                                            sty.svg__mu9Ck
+                                          )}
+                                          role={"img"}
+                                        />
+                                      ) : null}
+
+                                      <svg
+                                        className={classNames(
+                                          projectcss.all,
+                                          sty.svg__sz5Gv
+                                        )}
+                                        role={"img"}
+                                      />
+                                    </p.PlasmicLink>
+                                  </div>
+                                ) : null}
+                              </p.Stack>
                             ) : null}
                           </p.Stack>
-                        </p.Stack>
+                        ) : null}
                       </p.Stack>
                     </p.Stack>
                   </p.Stack>
@@ -363,110 +385,141 @@ function PlasmicHomepage__RenderFunc(props: {
                       <div
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox__dNNu
+                          sty.freeBox__nmbaV
                         )}
                       >
-                        {true ? (
+                        <p.Stack
+                          as={"div"}
+                          hasGap={true}
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox___2Qyp
+                          )}
+                        >
+                          <h1
+                            data-plasmic-name={"h1"}
+                            data-plasmic-override={overrides.h1}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.h1,
+                              projectcss.__wab_text,
+                              sty.h1
+                            )}
+                          >
+                            {hasVariant(
+                              globalVariants,
+                              "screen",
+                              "mobileOnly"
+                            ) ? (
+                              <React.Fragment>
+                                <React.Fragment>
+                                  {"Ton E-Book fitness "}
+                                </React.Fragment>
+                                <span
+                                  className={
+                                    "plasmic_default__all plasmic_default__span"
+                                  }
+                                  style={{ textDecorationLine: "underline" }}
+                                >
+                                  {"gratuit"}
+                                </span>
+                              </React.Fragment>
+                            ) : (
+                              <React.Fragment>
+                                <React.Fragment>
+                                  {"Ton E-Book fitness "}
+                                </React.Fragment>
+                                <span
+                                  className={
+                                    "plasmic_default__all plasmic_default__span"
+                                  }
+                                  style={{ textDecorationLine: "underline" }}
+                                >
+                                  {"gratuit"}
+                                </span>
+                              </React.Fragment>
+                            )}
+                          </h1>
+
                           <div
                             className={classNames(
                               projectcss.all,
-                              sty.freeBox__nmbaV
+                              projectcss.__wab_text,
+                              sty.text__kjbni
                             )}
                           >
-                            <p.Stack
-                              as={"div"}
-                              hasGap={true}
+                            {"Indique ton email pour le recevoir :"}
+                          </div>
+
+                          <p.Stack
+                            as={"form"}
+                            data-plasmic-name={"form"}
+                            data-plasmic-override={overrides.form}
+                            hasGap={true}
+                            action={
+                              "https://bodychallenge.cloudcall.fr/webhook/ebook" as const
+                            }
+                            className={classNames(projectcss.all, sty.form)}
+                            method={"post" as const}
+                          >
+                            <TextInput
+                              data-plasmic-name={"textInput"}
+                              data-plasmic-override={overrides.textInput}
                               className={classNames(
-                                projectcss.all,
-                                sty.freeBox___2Qyp
+                                "__wab_instance",
+                                sty.textInput
+                              )}
+                              endIcon={
+                                (() => {
+                                  try {
+                                    return $props.validEmail;
+                                  } catch (e) {
+                                    if (e instanceof TypeError) {
+                                      return true;
+                                    }
+                                    throw e;
+                                  }
+                                })() ? (
+                                  <ChecksvgIcon
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.svg__sd1N1
+                                    )}
+                                    role={"img"}
+                                  />
+                                ) : null
+                              }
+                              name={"email" as const}
+                              placeholder={"email" as const}
+                              required={true}
+                              showEndIcon={true}
+                              startIcon={
+                                <SearchsvgIcon
+                                  data-plasmic-name={"validIcon"}
+                                  data-plasmic-override={overrides.validIcon}
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.validIcon
+                                  )}
+                                  role={"img"}
+                                />
+                              }
+                            />
+
+                            <Button
+                              data-plasmic-name={"button"}
+                              data-plasmic-override={overrides.button}
+                              className={classNames(
+                                "__wab_instance",
+                                sty.button
                               )}
                             >
-                              <h1
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.h1,
-                                  projectcss.__wab_text,
-                                  sty.h1__pf1I7
-                                )}
-                              >
-                                {"Ton E-Book fitness gratuit"}
-                              </h1>
-
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__kjbni
-                                )}
-                              >
-                                {"Indique ton email pour le recevoir :"}
-                              </div>
-                            </p.Stack>
-                          </div>
-                        ) : null}
+                              {"Valider"}
+                            </Button>
+                          </p.Stack>
+                        </p.Stack>
                       </div>
                     ) : null}
-
-                    <p.Stack
-                      as={"form"}
-                      data-plasmic-name={"form"}
-                      data-plasmic-override={overrides.form}
-                      hasGap={true}
-                      action={
-                        "https://bodychallenge.cloudcall.fr/webhook/ebook" as const
-                      }
-                      className={classNames(projectcss.all, sty.form)}
-                      method={"post" as const}
-                    >
-                      <TextInput
-                        data-plasmic-name={"textInput"}
-                        data-plasmic-override={overrides.textInput}
-                        className={classNames("__wab_instance", sty.textInput)}
-                        endIcon={
-                          (() => {
-                            try {
-                              return $props.validEmail;
-                            } catch (e) {
-                              if (e instanceof TypeError) {
-                                return true;
-                              }
-                              throw e;
-                            }
-                          })() ? (
-                            <ChecksvgIcon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__sd1N1
-                              )}
-                              role={"img"}
-                            />
-                          ) : null
-                        }
-                        name={"email" as const}
-                        placeholder={"email" as const}
-                        required={true}
-                        showEndIcon={true}
-                        startIcon={
-                          <SearchsvgIcon
-                            data-plasmic-name={"validIcon"}
-                            data-plasmic-override={overrides.validIcon}
-                            className={classNames(
-                              projectcss.all,
-                              sty.validIcon
-                            )}
-                            role={"img"}
-                          />
-                        }
-                      />
-
-                      <Button
-                        data-plasmic-name={"button"}
-                        data-plasmic-override={overrides.button}
-                        className={classNames("__wab_instance", sty.button)}
-                      >
-                        {"Valider"}
-                      </Button>
-                    </p.Stack>
                   </p.Stack>
                 ) : null}
               </div>
@@ -507,21 +560,26 @@ function PlasmicHomepage__RenderFunc(props: {
 const PlasmicDescendants = {
   root: [
     "root",
+    "img",
     "foreground2",
+    "h1",
     "form",
     "textInput",
     "textbox",
     "validIcon",
     "button"
   ],
+  img: ["img"],
   foreground2: [
     "foreground2",
+    "h1",
     "form",
     "textInput",
     "textbox",
     "validIcon",
     "button"
   ],
+  h1: ["h1"],
   form: ["form", "textInput", "textbox", "validIcon", "button"],
   textInput: ["textInput", "textbox", "validIcon"],
   validIcon: ["validIcon"],
@@ -532,7 +590,9 @@ type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  img: typeof p.PlasmicImg;
   foreground2: "div";
+  h1: "h1";
   form: "form";
   textInput: typeof TextInput;
   validIcon: "svg";
@@ -600,7 +660,9 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    img: makeNodeComponent("img"),
     foreground2: makeNodeComponent("foreground2"),
+    h1: makeNodeComponent("h1"),
     form: makeNodeComponent("form"),
     textInput: makeNodeComponent("textInput"),
     validIcon: makeNodeComponent("validIcon"),
@@ -608,7 +670,15 @@ export const PlasmicHomepage = Object.assign(
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
-    internalArgProps: PlasmicHomepage__ArgProps
+    internalArgProps: PlasmicHomepage__ArgProps,
+
+    // Page metadata
+    pageMetadata: {
+      title: "",
+      description: "",
+      ogImageSrc: "",
+      canonical: ""
+    }
   }
 );
 

@@ -81,6 +81,16 @@
       }
     },
     {
+      "name": "body challenge",
+      "type": "color",
+      "value": "#FF3985",
+      "category": "color",
+      "meta": {
+        "projectId": "gBGqaUF3C5CQvEpDAhmCMe",
+        "id": "WzqF_EJfnlm"
+      }
+    },
+    {
       "name": "button",
       "type": "color",
       "value": "#FF85B4",
@@ -128,16 +138,6 @@
       "meta": {
         "projectId": "gBGqaUF3C5CQvEpDAhmCMe",
         "id": "oWSh5836nTnSLz"
-      }
-    },
-    {
-      "name": "hover pink 2",
-      "type": "color",
-      "value": "#FF3985",
-      "category": "color",
-      "meta": {
-        "projectId": "gBGqaUF3C5CQvEpDAhmCMe",
-        "id": "WzqF_EJfnlm"
       }
     },
     {

@@ -86,7 +86,10 @@ function PlasmicMerci__RenderFunc(props: {
     [props.args]
   );
 
-  const $props = args;
+  const $props = {
+    ...args,
+    ...variants
+  };
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsojSgcPkSvUubm()
@@ -513,7 +516,15 @@ export const PlasmicMerci = Object.assign(
 
     // Metadata about props expected for PlasmicMerci
     internalVariantProps: PlasmicMerci__VariantProps,
-    internalArgProps: PlasmicMerci__ArgProps
+    internalArgProps: PlasmicMerci__ArgProps,
+
+    // Page metadata
+    pageMetadata: {
+      title: "",
+      description: "",
+      ogImageSrc: "",
+      canonical: ""
+    }
   }
 );
 

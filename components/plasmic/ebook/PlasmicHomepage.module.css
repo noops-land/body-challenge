@@ -32,12 +32,13 @@
   position: relative;
   width: 100%;
   align-content: unset;
-  background: radial-gradient(
-    ellipse 200% 100% at 50% 0%,
-    var(--token-e3aulsK3H) 0%,
-    #d0a7b5 37%,
-    var(--token-PKBerdVEP) 100%
-  );
+  background: url("/plasmic/ebook/images/programmeFitnesspng.png") left 50% top 0px / cover no-repeat,
+    radial-gradient(
+      ellipse 200% 100% at 50% 0%,
+      var(--token-e3aulsK3H) 0%,
+      #d0a7b5 37%,
+      var(--token-PKBerdVEP) 100%
+    );
   min-width: 0;
   padding: 0px;
 }
@@ -187,13 +188,15 @@
     margin-top: 8px;
   }
 }
-.h1___8UM30 {
+.img {
   position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 800px;
-  color: var(--token-MF_LXv63B-_4YN);
-  min-width: 0;
+  height: 231px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .img {
+    margin-top: calc(200px + 8px) !important;
+    height: 200px;
+  }
 }
 .freeBox__hXzTj {
   flex-direction: row;
@@ -239,8 +242,8 @@
 }
 .freeBox__pnHe4 {
   flex-direction: row;
-  display: flex;
   position: relative;
+  display: none;
 }
 .freeBox__pnHe4 > :global(.__wab_flex-container) {
   flex-direction: row;
@@ -562,29 +565,13 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .foreground2 {
-    padding: 15px 15px 250px;
+    max-width: 1200px;
+    padding: 15px 15px 50px;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .foreground2 > :global(.__wab_flex-container) {
     align-items: center;
-  }
-}
-.freeBox__dNNu {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: flex-start;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  min-width: 0;
-  padding: 8px 8px 8px 0px;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .freeBox__dNNu {
-    padding-left: 0px;
   }
 }
 .freeBox__nmbaV {
@@ -633,12 +620,14 @@
     align-items: center;
   }
 }
-.h1__pf1I7 {
+.h1 {
   width: auto;
-  color: var(--token-MF_LXv63B-_4YN);
+  color: var(--token-syAzc7Feg-t);
+  font-family: "Shadows Into Light Two";
+  filter: drop-shadow(6px 6px 10px #000000);
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .h1__pf1I7 {
+  .h1 {
     font-size: 45px;
     line-height: 1em;
     text-align: center;
@@ -646,10 +635,12 @@
 }
 .text__kjbni {
   font-size: 28px;
-  color: #ffffffd9;
+  color: var(--token-MF_LXv63B-_4YN);
   text-align: left;
   line-height: 28px;
   font-weight: 500;
+  font-family: "Raleway", sans-serif;
+  filter: drop-shadow(6px 6px 10px #000000);
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .text__kjbni {

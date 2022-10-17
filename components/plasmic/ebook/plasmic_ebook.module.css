@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600&family=Inter%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600&family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600&family=Inter%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600&family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600&family=Shadows+Into+Light+Two%3Aital%2Cwght%400%2C400&family=Raleway%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600&display=swap");
 
 .plasmic_tokens {
   --token-Ux81CshiPIioAz: #010101;
@@ -28,7 +28,7 @@
   --token-syAzc7Feg-t: #ff85b4;
   --plasmic-token-button-2: var(--token-syAzc7Feg-t);
   --token-WzqF_EJfnlm: #ff3985;
-  --plasmic-token-hover-pink-2: var(--token-WzqF_EJfnlm);
+  --plasmic-token-body-challenge: var(--token-WzqF_EJfnlm);
   --token-YjnrECuchx0: #010101;
   --plasmic-token-black-2: var(--token-YjnrECuchx0);
   --token-TOKGnKgBnlh: #fcfbfb;

@@ -105,7 +105,18 @@
           "moduleFilePath": "plasmic/ebook/icons/PlasmicIcon__Searchsvg.tsx"
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "id": "Dwo95H6Gj",
+          "name": "Body-Challenge-logo.png",
+          "filePath": "../public/plasmic/ebook/images/bodyChallengeLogopng.png"
+        },
+        {
+          "id": "NpdEgtFoA",
+          "name": "Programme Fitness.png",
+          "filePath": "../public/plasmic/ebook/images/programmeFitnesspng.png"
+        }
+      ],
       "indirect": false,
       "globalContextsFilePath": "",
       "codeComponents": [
@@ -113,6 +124,11 @@
           "id": "1ZndEluXhH",
           "name": "PlasmicHead",
           "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "Yqewjkn5HP",
+          "name": "Fetcher",
+          "componentImportPath": "@plasmicapp/data-sources"
         }
       ]
     }
