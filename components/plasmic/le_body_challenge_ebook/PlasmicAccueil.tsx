@@ -49,11 +49,16 @@ import BlackCommentsBubbleSvgrepoComsvgIcon from "../ebook/icons/PlasmicIcon__Bl
 import SearchsvgIcon from "../ebook/icons/PlasmicIcon__Searchsvg"; // plasmic-import: -90nyNh7VQn/icon
 import ChecksvgIcon from "../ebook/icons/PlasmicIcon__Checksvg"; // plasmic-import: _bdPyp6gOc1JbC/icon
 
-export type PlasmicAccueil__VariantMembers = {};
+export type PlasmicAccueil__VariantMembers = {
+  merci: "merci";
+};
 
-export type PlasmicAccueil__VariantsArgs = {};
+export type PlasmicAccueil__VariantsArgs = {
+  merci?: SingleBooleanChoiceArg<"merci">;
+};
+
 type VariantPropType = keyof PlasmicAccueil__VariantsArgs;
-export const PlasmicAccueil__VariantProps = new Array<VariantPropType>();
+export const PlasmicAccueil__VariantProps = new Array<VariantPropType>("merci");
 
 export type PlasmicAccueil__ArgsType = {
   validEmail?: boolean;
@@ -143,7 +148,8 @@ function PlasmicAccueil__RenderFunc(props: {
               projectcss.plasmic_default_styles,
               projectcss.plasmic_mixins,
               projectcss.plasmic_tokens,
-              sty.root
+              sty.root,
+              { [sty.rootmerci]: hasVariant(variants, "merci", "merci") }
             )}
           >
             {true ? (
@@ -415,14 +421,23 @@ function PlasmicAccueil__RenderFunc(props: {
                               projectcss.all,
                               projectcss.h1,
                               projectcss.__wab_text,
-                              sty.h1
+                              sty.h1,
+                              {
+                                [sty.h1merci]: hasVariant(
+                                  variants,
+                                  "merci",
+                                  "merci"
+                                )
+                              }
                             )}
                           >
-                            {hasVariant(
-                              globalVariants,
-                              "screen",
-                              "mobileOnly"
-                            ) ? (
+                            {hasVariant(variants, "merci", "merci") ? (
+                              "Merci !"
+                            ) : hasVariant(
+                                globalVariants,
+                                "screen",
+                                "mobileOnly"
+                              ) ? (
                               <React.Fragment>
                                 <React.Fragment>
                                   {"Ton E-Book fitness "}
@@ -457,80 +472,106 @@ function PlasmicAccueil__RenderFunc(props: {
                             className={classNames(
                               projectcss.all,
                               projectcss.__wab_text,
-                              sty.text__kjbni
+                              sty.text__kjbni,
+                              {
+                                [sty.textmerci__kjbnieXEfC]: hasVariant(
+                                  variants,
+                                  "merci",
+                                  "merci"
+                                )
+                              }
                             )}
                           >
-                            {"Indique ton email pour le recevoir :"}
+                            {hasVariant(variants, "merci", "merci")
+                              ? "Tu vas bientôt recevoir ton e-book \ndans ta boîte mail"
+                              : "Indique ton email pour le recevoir :"}
                           </div>
 
-                          <p.Stack
-                            as={"form"}
-                            data-plasmic-name={"form"}
-                            data-plasmic-override={overrides.form}
-                            hasGap={true}
-                            action={
-                              "https://bodychallenge.cloudcall.fr/webhook/ebook" as const
-                            }
-                            className={classNames(projectcss.all, sty.form)}
-                            method={"post" as const}
-                          >
-                            <TextInput
-                              data-plasmic-name={"email"}
-                              data-plasmic-override={overrides.email}
-                              autocomplete={"email" as const}
-                              className={classNames(
-                                "__wab_instance",
-                                sty.email
-                              )}
-                              endIcon={
-                                (() => {
-                                  try {
-                                    return $props.validEmail;
-                                  } catch (e) {
-                                    if (e instanceof TypeError) {
-                                      return true;
-                                    }
-                                    throw e;
+                          {(
+                            hasVariant(variants, "merci", "merci") ? true : true
+                          ) ? (
+                            <p.Stack
+                              as={"form"}
+                              data-plasmic-name={"form"}
+                              data-plasmic-override={overrides.form}
+                              hasGap={true}
+                              action={
+                                "https://bodychallenge.cloudcall.fr/webhook/ebook" as const
+                              }
+                              className={classNames(projectcss.all, sty.form, {
+                                [sty.formmerci]: hasVariant(
+                                  variants,
+                                  "merci",
+                                  "merci"
+                                )
+                              })}
+                              method={"post" as const}
+                            >
+                              <TextInput
+                                data-plasmic-name={"email"}
+                                data-plasmic-override={overrides.email}
+                                autocomplete={"email" as const}
+                                className={classNames(
+                                  "__wab_instance",
+                                  sty.email,
+                                  {
+                                    [sty.emailmerci]: hasVariant(
+                                      variants,
+                                      "merci",
+                                      "merci"
+                                    )
                                   }
-                                })() ? (
-                                  <ChecksvgIcon
+                                )}
+                                endIcon={
+                                  (() => {
+                                    try {
+                                      return $props.validEmail;
+                                    } catch (e) {
+                                      if (e instanceof TypeError) {
+                                        return true;
+                                      }
+                                      throw e;
+                                    }
+                                  })() ? (
+                                    <ChecksvgIcon
+                                      className={classNames(
+                                        projectcss.all,
+                                        sty.svg__sd1N1
+                                      )}
+                                      role={"img"}
+                                    />
+                                  ) : null
+                                }
+                                name={"email" as const}
+                                placeholder={"email" as const}
+                                required={true}
+                                showEndIcon={true}
+                                startIcon={
+                                  <SearchsvgIcon
+                                    data-plasmic-name={"validIcon"}
+                                    data-plasmic-override={overrides.validIcon}
                                     className={classNames(
                                       projectcss.all,
-                                      sty.svg__sd1N1
+                                      sty.validIcon
                                     )}
                                     role={"img"}
                                   />
-                                ) : null
-                              }
-                              name={"email" as const}
-                              placeholder={"email" as const}
-                              required={true}
-                              showEndIcon={true}
-                              startIcon={
-                                <SearchsvgIcon
-                                  data-plasmic-name={"validIcon"}
-                                  data-plasmic-override={overrides.validIcon}
-                                  className={classNames(
-                                    projectcss.all,
-                                    sty.validIcon
-                                  )}
-                                  role={"img"}
-                                />
-                              }
-                              type={"email" as const}
-                            />
+                                }
+                                type={"email" as const}
+                              />
 
-                            <Button
-                              data-plasmic-name={"button"}
-                              data-plasmic-override={overrides.button}
-                              className={classNames(
-                                "__wab_instance",
-                                sty.button
-                              )}
-                            >
-                              {"Recevoir mon e-book fitness"}
-                            </Button>
-                          </p.Stack>
+                              <Button
+                                data-plasmic-name={"button"}
+                                data-plasmic-override={overrides.button}
+                                className={classNames(
+                                  "__wab_instance",
+                                  sty.button
+                                )}
+                              >
+                                {"Recevoir mon e-book fitness"}
+                              </Button>
+                            </p.Stack>
+                          ) : null}
                         </p.Stack>
                       </div>
                     ) : null}

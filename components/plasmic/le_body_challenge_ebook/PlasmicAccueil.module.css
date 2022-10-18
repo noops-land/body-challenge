@@ -648,6 +648,11 @@
     line-height: 16px;
   }
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .textmerci__kjbnieXEfC {
+    text-align: center;
+  }
+}
 .form {
   flex-direction: row;
   display: flex;
@@ -696,6 +701,9 @@
     margin-left: 0px;
     margin-top: 5px;
   }
+}
+.formmerci {
+  display: none;
 }
 .email:global(.__wab_instance) {
   position: relative;
