@@ -574,8 +574,9 @@ function PlasmicAccueil__RenderFunc(props: {
                                   "__wab_instance",
                                   sty.button
                                 )}
+                                color={"pink" as const}
                               >
-                                {"Recevoir mon e-book fitness"}
+                                {"Valider"}
                               </Button>
                             </p.Stack>
                           ) : null}
