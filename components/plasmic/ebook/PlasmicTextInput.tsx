@@ -237,7 +237,6 @@ function PlasmicTextInput__RenderFunc(props: {
         data-plasmic-override={overrides.input}
         aria-label={args["aria-label"]}
         aria-labelledby={args["aria-labelledby"]}
-        autoComplete={args.autocomplete}
         className={classNames(projectcss.all, projectcss.input, sty.input, {
           [sty.input___focusVisibleWithin]: triggers.focusVisibleWithin_root,
           [sty.inputcolor_dark]: hasVariant(variants, "color", "dark"),
