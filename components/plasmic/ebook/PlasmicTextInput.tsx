@@ -74,6 +74,8 @@ export type PlasmicTextInput__ArgsType = {
   required?: boolean;
   "aria-label"?: string;
   "aria-labelledby"?: string;
+  type?: string;
+  autocomplete?: string;
 };
 
 type ArgPropType = keyof PlasmicTextInput__ArgsType;
@@ -85,7 +87,9 @@ export const PlasmicTextInput__ArgProps = new Array<ArgPropType>(
   "name",
   "required",
   "aria-label",
-  "aria-labelledby"
+  "aria-labelledby",
+  "type",
+  "autocomplete"
 );
 
 export type PlasmicTextInput__OverridesType = {
@@ -102,6 +106,8 @@ export interface DefaultTextInputProps extends pp.BaseTextInputProps {
   required?: boolean;
   "aria-label"?: string;
   "aria-labelledby"?: string;
+  type?: string;
+  autocomplete?: string;
   color?: SingleChoiceArg<"dark">;
 }
 
@@ -133,7 +139,7 @@ function PlasmicTextInput__RenderFunc(props: {
 
   const [isRootFocusVisibleWithin, triggerRootFocusVisibleWithinProps] =
     useTrigger("useFocusVisibleWithin", {
-      isTextInput: true
+      isTextInput: false
     });
 
   const triggers = {
@@ -231,6 +237,7 @@ function PlasmicTextInput__RenderFunc(props: {
         data-plasmic-override={overrides.input}
         aria-label={args["aria-label"]}
         aria-labelledby={args["aria-labelledby"]}
+        autoComplete={args.autocomplete}
         className={classNames(projectcss.all, projectcss.input, sty.input, {
           [sty.input___focusVisibleWithin]: triggers.focusVisibleWithin_root,
           [sty.inputcolor_dark]: hasVariant(variants, "color", "dark"),
@@ -256,7 +263,7 @@ function PlasmicTextInput__RenderFunc(props: {
         name={args.name}
         placeholder={args.placeholder}
         required={args.required}
-        type={"text" as const}
+        type={args.type}
         value={args.value}
       />
 

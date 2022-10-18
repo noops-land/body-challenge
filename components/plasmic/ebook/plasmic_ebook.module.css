@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600&family=Inter%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600&family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600&family=Shadows+Into+Light+Two%3Aital%2Cwght%400%2C400&family=Raleway%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600&family=Rubik%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600&family=Inter%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600&family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600&family=Shadows+Into+Light+Two%3Aital%2Cwght%400%2C400&display=swap");
 
 .plasmic_tokens {
   --token-Ux81CshiPIioAz: #010101;
@@ -36,7 +36,7 @@
 }
 
 .plasmic_default_styles {
-  --mixin-BKMrTXOqdS6Kgq_font-family: "Rubik";
+  --mixin-BKMrTXOqdS6Kgq_font-family: "Raleway", sans-serif;
   --mixin-BKMrTXOqdS6Kgq_font-size: 16px;
   --mixin-BKMrTXOqdS6Kgq_font-weight: 400;
   --mixin-BKMrTXOqdS6Kgq_font-style: normal;
@@ -53,29 +53,29 @@
   --mixin-_zktMSkeETL2td_font-size: 50px;
   --mixin-_zktMSkeETL2td_line-height: 1;
   --mixin-_zktMSkeETL2td_letter-spacing: 0px;
-  --mixin-_zktMSkeETL2td_font-family: "Rubik";
+  --mixin-_zktMSkeETL2td_font-family: "Rubik", sans-serif;
   --mixin-_zktMSkeETL2td_white-space: pre-wrap;
   --mixin-YED50LT9b3cz2G_color: #000000;
   --mixin-YED50LT9b3cz2G_font-weight: 600;
   --mixin-YED50LT9b3cz2G_font-size: 40px;
   --mixin-YED50LT9b3cz2G_line-height: 1.1;
   --mixin-YED50LT9b3cz2G_letter-spacing: -1px;
-  --mixin-YED50LT9b3cz2G_font-family: "Rubik";
+  --mixin-YED50LT9b3cz2G_font-family: "Rubik", sans-serif;
   --mixin-YED50LT9b3cz2G_white-space: pre-wrap;
   --mixin-CgOgNsKxekV391_color: var(--token-MF_LXv63B-_4YN);
-  --mixin-CgOgNsKxekV391_font-family: "Rubik";
+  --mixin-CgOgNsKxekV391_font-family: "Rubik", sans-serif;
   --mixin-CgOgNsKxekV391_font-weight: 600;
   --mixin-CgOgNsKxekV391_font-size: 16px;
   --mixin-CgOgNsKxekV391_text-transform: uppercase;
   --mixin-CgOgNsKxekV391_white-space: pre-wrap;
-  --mixin-_ybFsUZ7sJOGKt_font-family: "Inter";
+  --mixin-_ybFsUZ7sJOGKt_font-family: "Inter", sans-serif;
   --mixin-_ybFsUZ7sJOGKt_color: #000000;
   --mixin-_ybFsUZ7sJOGKt_font-size: 32px;
   --mixin-_ybFsUZ7sJOGKt_font-weight: 600;
   --mixin-_ybFsUZ7sJOGKt_letter-spacing: -0.8px;
   --mixin-_ybFsUZ7sJOGKt_line-height: 1.2;
   --mixin-_ybFsUZ7sJOGKt_white-space: pre-wrap;
-  --mixin-T2c_hKvL8iyfF4_font-family: "Inter";
+  --mixin-T2c_hKvL8iyfF4_font-family: "Inter", sans-serif;
   --mixin-T2c_hKvL8iyfF4_color: #000000;
   --mixin-T2c_hKvL8iyfF4_font-size: 24px;
   --mixin-T2c_hKvL8iyfF4_font-weight: 600;
@@ -134,12 +134,12 @@
   --mixin-lKhyK4Jvqnz54G_padding-right: 6px;
   --mixin-lKhyK4Jvqnz54G_padding-top: 3px;
   --mixin-lKhyK4Jvqnz54G_white-space: pre-wrap;
-  --mixin-8hnZsbmGh-ptWU_font-family: "Rubik";
+  --mixin-8hnZsbmGh-ptWU_font-family: "Rubik", sans-serif;
   --mixin-8hnZsbmGh-ptWU_color: var(--token-Ux81CshiPIioAz);
   --mixin-8hnZsbmGh-ptWU_font-weight: 500;
   --mixin-8hnZsbmGh-ptWU_font-size: 20px;
   --mixin-8hnZsbmGh-ptWU_white-space: pre-wrap;
-  --mixin-12bNbKnauft6m0_font-family: "Inter";
+  --mixin-12bNbKnauft6m0_font-family: "Inter", sans-serif;
   --mixin-12bNbKnauft6m0_color: #000000;
   --mixin-12bNbKnauft6m0_font-size: 20px;
   --mixin-12bNbKnauft6m0_font-weight: 600;

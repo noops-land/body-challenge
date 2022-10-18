@@ -465,6 +465,7 @@ function PlasmicHomepage__RenderFunc(props: {
                             <TextInput
                               data-plasmic-name={"textInput"}
                               data-plasmic-override={overrides.textInput}
+                              autocomplete={"email" as const}
                               className={classNames(
                                 "__wab_instance",
                                 sty.textInput
@@ -504,6 +505,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                   role={"img"}
                                 />
                               }
+                              type={"email" as const}
                             />
 
                             <Button
