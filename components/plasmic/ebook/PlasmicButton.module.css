@@ -29,7 +29,7 @@
   padding-left: 16px;
 }
 .rootcolor_yellow {
-  background: var(--token-QQlwYSYDk1n);
+  background: #fdfb75;
   border-width: 0px;
 }
 .rootcolor_red {
@@ -63,7 +63,7 @@
   padding-right: 16px;
 }
 .rootcolor_pink {
-  background: var(--token-syAzc7Feg-t);
+  background: #ff85b4;
   border-width: 0px;
 }
 .rootisDisabled {
@@ -111,7 +111,7 @@
   background: none;
 }
 .rootcolor_yellow:hover {
-  background: var(--token-EmwvAn5L2j4);
+  background: #efec03;
 }
 .rootcolor_red:hover {
   background: #ec5e41;
@@ -141,7 +141,7 @@
   background: #ffffff00;
 }
 .rootcolor_pink:hover {
-  background: var(--token-WzqF_EJfnlm);
+  background: #ff3985;
 }
 .rootcolor_blue:hover {
   background: #369eff;
@@ -161,7 +161,7 @@
   background: #2e2e2b;
 }
 .rootcolor_yellow:active {
-  background: var(--token-EmwvAn5L2j4);
+  background: #efec03;
 }
 .rootcolor_red:active {
   background: #f16a50;
@@ -191,7 +191,7 @@
   background: #ffffff00;
 }
 .rootcolor_pink:active {
-  background: var(--token-WzqF_EJfnlm);
+  background: #ff3985;
 }
 .rootcolor_blue:active {
   background: #52a9ff;
@@ -265,7 +265,7 @@
   white-space: pre;
 }
 .slotTargetChildrencolor_yellow {
-  color: var(--token-YjnrECuchx0);
+  color: var(--token-Ux81CshiPIioAz);
 }
 .slotTargetChildrencolor_red {
   color: #ffffff;
@@ -295,7 +295,7 @@
   color: #0091ff;
 }
 .slotTargetChildrencolor_pink {
-  color: var(--token-TOKGnKgBnlh);
+  color: var(--token-MF_LXv63B-_4YN);
 }
 .slotTargetChildrencolor_blue {
   color: #ffffff;
@@ -341,6 +341,9 @@
   > :global(.__wab_slot)
   > :global(.__wab_slot-string-wrapper) {
   text-decoration-line: underline;
+}
+.rootcolor_pink:hover .slotTargetChildrencolor_pink {
+  color: var(--token-MF_LXv63B-_4YN);
 }
 .root:focus-within .slotTargetChildren > *,
 .root:focus-within .slotTargetChildren > :global(.__wab_slot) > *,
@@ -408,6 +411,9 @@
 }
 .rootcolor_link:active .slotTargetChildrencolor_link {
   color: #006adc;
+}
+.rootcolor_pink:active .slotTargetChildrencolor_pink {
+  color: var(--token-MF_LXv63B-_4YN);
 }
 .endIconContainer {
   display: flex;
