@@ -6,6 +6,7 @@ import * as ph from "@plasmicapp/host";
 import { ScreenVariantProvider } from "../components/plasmic/ebook/PlasmicGlobalVariant__Screen";
 import { PlasmicAccueil } from "../components/plasmic/le_body_challenge_ebook/PlasmicAccueil";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 function Merci() {
   return (
@@ -13,7 +14,10 @@ function Merci() {
       params={useRouter()?.query}
       query={useRouter()?.query}
     >
-      <PlasmicAccueil merci={true} />
+      <PlasmicAccueil merci={true} title="z" />
+      {/* <Head>
+        <title key="title">Le BODY CHALLENGE : merci !</title>
+      </Head> */}
     </ph.PageParamsProvider>
   );
 }
