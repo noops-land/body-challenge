@@ -68,10 +68,9 @@ export type PlasmicHomepage__OverridesType = {
   foreground2?: p.Flex<"div">;
   h1?: p.Flex<"h1">;
   form?: p.Flex<"form">;
-  textInput?: p.Flex<typeof TextInput>;
+  email?: p.Flex<typeof TextInput>;
   validIcon?: p.Flex<"svg">;
   button?: p.Flex<typeof Button>;
-  textbox?: p.Flex<typeof TextInput>;
 };
 
 export interface DefaultHomepageProps {}
@@ -463,12 +462,12 @@ function PlasmicHomepage__RenderFunc(props: {
                             method={"post" as const}
                           >
                             <TextInput
-                              data-plasmic-name={"textInput"}
-                              data-plasmic-override={overrides.textInput}
+                              data-plasmic-name={"email"}
+                              data-plasmic-override={overrides.email}
                               autocomplete={"email" as const}
                               className={classNames(
                                 "__wab_instance",
-                                sty.textInput
+                                sty.email
                               )}
                               endIcon={
                                 (() => {
@@ -574,24 +573,15 @@ const PlasmicDescendants = {
     "foreground2",
     "h1",
     "form",
-    "textInput",
-    "textbox",
+    "email",
     "validIcon",
     "button"
   ],
   img: ["img"],
-  foreground2: [
-    "foreground2",
-    "h1",
-    "form",
-    "textInput",
-    "textbox",
-    "validIcon",
-    "button"
-  ],
+  foreground2: ["foreground2", "h1", "form", "email", "validIcon", "button"],
   h1: ["h1"],
-  form: ["form", "textInput", "textbox", "validIcon", "button"],
-  textInput: ["textInput", "textbox", "validIcon"],
+  form: ["form", "email", "validIcon", "button"],
+  email: ["email", "validIcon"],
   validIcon: ["validIcon"],
   button: ["button"]
 } as const;
@@ -604,7 +594,7 @@ type NodeDefaultElementType = {
   foreground2: "div";
   h1: "h1";
   form: "form";
-  textInput: typeof TextInput;
+  email: typeof TextInput;
   validIcon: "svg";
   button: typeof Button;
 };
@@ -674,7 +664,7 @@ export const PlasmicHomepage = Object.assign(
     foreground2: makeNodeComponent("foreground2"),
     h1: makeNodeComponent("h1"),
     form: makeNodeComponent("form"),
-    textInput: makeNodeComponent("textInput"),
+    email: makeNodeComponent("email"),
     validIcon: makeNodeComponent("validIcon"),
     button: makeNodeComponent("button"),
 

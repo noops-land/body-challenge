@@ -260,6 +260,7 @@ function PlasmicTextInput__RenderFunc(props: {
         disabled={
           hasVariant(variants, "isDisabled", "isDisabled") ? true : undefined
         }
+        id={args.name}
         name={args.name}
         placeholder={args.placeholder}
         required={args.required}
