@@ -14,10 +14,10 @@ function Merci() {
       params={useRouter()?.query}
       query={useRouter()?.query}
     >
-      <PlasmicAccueil merci={true} title="z" />
-      {/* <Head>
+      <PlasmicAccueil merci={true}  />
+      <Head>
         <title key="title">Le BODY CHALLENGE : merci !</title>
-      </Head> */}
+      </Head>
     </ph.PageParamsProvider>
   );
 }
