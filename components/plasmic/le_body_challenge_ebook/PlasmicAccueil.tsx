@@ -411,7 +411,14 @@ function PlasmicAccueil__RenderFunc(props: {
                           hasGap={true}
                           className={classNames(
                             projectcss.all,
-                            sty.freeBox___2Qyp
+                            sty.freeBox___2Qyp,
+                            {
+                              [sty.freeBoxmerci___2QyPeXEfC]: hasVariant(
+                                variants,
+                                "merci",
+                                "merci"
+                              )
+                            }
                           )}
                         >
                           <h1

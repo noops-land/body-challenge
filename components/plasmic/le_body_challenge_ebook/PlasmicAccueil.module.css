@@ -620,6 +620,14 @@
     align-items: center;
   }
 }
+.freeBoxmerci___2QyPeXEfC {
+  margin: 0px 0px 45px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBoxmerci___2QyPeXEfC {
+    margin-bottom: 152px;
+  }
+}
 .h1 {
   width: auto;
   color: #ff85b4;
