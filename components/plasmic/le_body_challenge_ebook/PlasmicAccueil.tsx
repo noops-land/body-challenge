@@ -70,7 +70,6 @@ export const PlasmicAccueil__ArgProps = new Array<ArgPropType>("validEmail");
 export type PlasmicAccueil__OverridesType = {
   root?: p.Flex<"div">;
   img?: p.Flex<typeof p.PlasmicImg>;
-  foreground2?: p.Flex<"div">;
   h1?: p.Flex<"h1">;
   form?: p.Flex<"form">;
   email?: p.Flex<typeof TextInput>;
@@ -394,10 +393,8 @@ function PlasmicAccueil__RenderFunc(props: {
                 {true ? (
                   <p.Stack
                     as={"div"}
-                    data-plasmic-name={"foreground2"}
-                    data-plasmic-override={overrides.foreground2}
                     hasGap={true}
-                    className={classNames(projectcss.all, sty.foreground2)}
+                    className={classNames(projectcss.all, sty.freeBox__dch4U)}
                   >
                     {true ? (
                       <div
@@ -621,18 +618,8 @@ function PlasmicAccueil__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: [
-    "root",
-    "img",
-    "foreground2",
-    "h1",
-    "form",
-    "email",
-    "validIcon",
-    "button"
-  ],
+  root: ["root", "img", "h1", "form", "email", "validIcon", "button"],
   img: ["img"],
-  foreground2: ["foreground2", "h1", "form", "email", "validIcon", "button"],
   h1: ["h1"],
   form: ["form", "email", "validIcon", "button"],
   email: ["email", "validIcon"],
@@ -645,7 +632,6 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   img: typeof p.PlasmicImg;
-  foreground2: "div";
   h1: "h1";
   form: "form";
   email: typeof TextInput;
@@ -715,7 +701,6 @@ export const PlasmicAccueil = Object.assign(
   {
     // Helper components rendering sub-elements
     img: makeNodeComponent("img"),
-    foreground2: makeNodeComponent("foreground2"),
     h1: makeNodeComponent("h1"),
     form: makeNodeComponent("form"),
     email: makeNodeComponent("email"),
