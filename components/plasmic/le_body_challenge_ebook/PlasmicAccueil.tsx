@@ -514,6 +514,7 @@ function PlasmicAccueil__RenderFunc(props: {
                               <TextInput
                                 data-plasmic-name={"email"}
                                 data-plasmic-override={overrides.email}
+                                aria-label={"" as const}
                                 autocomplete={"email" as const}
                                 className={classNames(
                                   "__wab_instance",
