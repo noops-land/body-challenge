@@ -112,7 +112,7 @@ function PlasmicAccueil__RenderFunc(props: {
   return (
     <React.Fragment>
       <Head>
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <title key="title">{PlasmicAccueil.pageMetadata.title}</title>
         <meta
           key="og:title"
@@ -123,6 +123,17 @@ function PlasmicAccueil__RenderFunc(props: {
           key="twitter:title"
           name="twitter:title"
           content={PlasmicAccueil.pageMetadata.title}
+        />
+
+        <meta
+          key="og:image"
+          property="og:image"
+          content={PlasmicAccueil.pageMetadata.ogImageSrc}
+        />
+        <meta
+          key="twitter:image"
+          name="twitter:image"
+          content={PlasmicAccueil.pageMetadata.ogImageSrc}
         />
       </Head>
 
@@ -716,7 +727,8 @@ export const PlasmicAccueil = Object.assign(
     pageMetadata: {
       title: "Le BODY CHALLENGE : ton E-Book fitness gratuit !",
       description: "",
-      ogImageSrc: "",
+      ogImageSrc:
+        "https://site-assets.plasmic.app/ffea3865d33f7bad46969852e6ace581.jpg",
       canonical: ""
     }
   }

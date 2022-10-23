@@ -102,6 +102,11 @@
           "id": "NpdEgtFoA",
           "name": "Programme Fitness.png",
           "filePath": "../public/plasmic/ebook/images/programmeFitnesspng.png"
+        },
+        {
+          "id": "3ymQbX6ZG",
+          "name": "bodychallenge.jpg",
+          "filePath": "../public/plasmic/le_body_challenge_ebook/images/bodychallengejpg.jpeg"
         }
       ],
       "indirect": false,
