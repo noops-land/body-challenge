@@ -105,6 +105,23 @@ function PlasmicAccueil__RenderFunc(props: {
     ...variants
   };
 
+  const currentUser = p.useCurrentUser?.() || {};
+
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "merci",
+        type: "private",
+        initFunc: ($props, $state, $ctx) => $props.merci
+      }
+    ],
+
+    [$props, $ctx]
+  );
+  const $state = p.useDollarState(stateSpecs, $props, $ctx);
+
+  const [$queries, setDollarQueries] = React.useState({});
+
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsojSgcPkSvUubm()
   });
@@ -159,7 +176,7 @@ function PlasmicAccueil__RenderFunc(props: {
               projectcss.plasmic_mixins,
               projectcss.plasmic_tokens,
               sty.root,
-              { [sty.rootmerci]: hasVariant(variants, "merci", "merci") }
+              { [sty.rootmerci]: hasVariant($state, "merci", "merci") }
             )}
           >
             {true ? (
@@ -422,7 +439,7 @@ function PlasmicAccueil__RenderFunc(props: {
                             sty.freeBox___2Qyp,
                             {
                               [sty.freeBoxmerci___2QyPeXEfC]: hasVariant(
-                                variants,
+                                $state,
                                 "merci",
                                 "merci"
                               )
@@ -439,14 +456,14 @@ function PlasmicAccueil__RenderFunc(props: {
                               sty.h1,
                               {
                                 [sty.h1merci]: hasVariant(
-                                  variants,
+                                  $state,
                                   "merci",
                                   "merci"
                                 )
                               }
                             )}
                           >
-                            {hasVariant(variants, "merci", "merci") ? (
+                            {hasVariant($state, "merci", "merci") ? (
                               "Merci !"
                             ) : hasVariant(
                                 globalVariants,
@@ -490,20 +507,20 @@ function PlasmicAccueil__RenderFunc(props: {
                               sty.text__kjbni,
                               {
                                 [sty.textmerci__kjbnieXEfC]: hasVariant(
-                                  variants,
+                                  $state,
                                   "merci",
                                   "merci"
                                 )
                               }
                             )}
                           >
-                            {hasVariant(variants, "merci", "merci")
+                            {hasVariant($state, "merci", "merci")
                               ? "Tu vas bientôt recevoir ton e-book \ndans ta boîte mail"
                               : "Indique ton email pour le recevoir :"}
                           </div>
 
                           {(
-                            hasVariant(variants, "merci", "merci") ? true : true
+                            hasVariant($state, "merci", "merci") ? true : true
                           ) ? (
                             <p.Stack
                               as={"form"}
@@ -515,7 +532,7 @@ function PlasmicAccueil__RenderFunc(props: {
                               }
                               className={classNames(projectcss.all, sty.form, {
                                 [sty.formmerci]: hasVariant(
-                                  variants,
+                                  $state,
                                   "merci",
                                   "merci"
                                 )
@@ -532,7 +549,7 @@ function PlasmicAccueil__RenderFunc(props: {
                                   sty.email,
                                   {
                                     [sty.emailmerci]: hasVariant(
-                                      variants,
+                                      $state,
                                       "merci",
                                       "merci"
                                     )

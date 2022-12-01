@@ -17,6 +17,7 @@ import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/host";
+
 import * as pp from "@plasmicapp/react-web";
 import {
   hasVariant,
@@ -137,6 +138,41 @@ function PlasmicTextInput__RenderFunc(props: {
     ...variants
   };
 
+  const currentUser = p.useCurrentUser?.() || {};
+
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "showStartIcon",
+        type: "private",
+        initFunc: ($props, $state, $ctx) => $props.showStartIcon
+      },
+
+      {
+        path: "showEndIcon",
+        type: "private",
+        initFunc: ($props, $state, $ctx) => $props.showEndIcon
+      },
+
+      {
+        path: "isDisabled",
+        type: "private",
+        initFunc: ($props, $state, $ctx) => $props.isDisabled
+      },
+
+      {
+        path: "color",
+        type: "private",
+        initFunc: ($props, $state, $ctx) => $props.color
+      }
+    ],
+
+    [$props, $ctx]
+  );
+  const $state = p.useDollarState(stateSpecs, $props, $ctx);
+
+  const [$queries, setDollarQueries] = React.useState({});
+
   const [isRootFocusVisibleWithin, triggerRootFocusVisibleWithinProps] =
     useTrigger("useFocusVisibleWithin", {
       isTextInput: false
@@ -161,19 +197,15 @@ function PlasmicTextInput__RenderFunc(props: {
         sty.root,
         {
           [sty.root___focusVisibleWithin]: triggers.focusVisibleWithin_root,
-          [sty.rootcolor_dark]: hasVariant(variants, "color", "dark"),
-          [sty.rootisDisabled]: hasVariant(
-            variants,
-            "isDisabled",
-            "isDisabled"
-          ),
+          [sty.rootcolor_dark]: hasVariant($state, "color", "dark"),
+          [sty.rootisDisabled]: hasVariant($state, "isDisabled", "isDisabled"),
           [sty.rootshowEndIcon]: hasVariant(
-            variants,
+            $state,
             "showEndIcon",
             "showEndIcon"
           ),
           [sty.rootshowStartIcon]: hasVariant(
-            variants,
+            $state,
             "showStartIcon",
             "showStartIcon"
           )
@@ -181,9 +213,7 @@ function PlasmicTextInput__RenderFunc(props: {
       )}
       data-plasmic-trigger-props={[triggerRootFocusVisibleWithinProps]}
     >
-      {(
-        hasVariant(variants, "showStartIcon", "showStartIcon") ? true : true
-      ) ? (
+      {(hasVariant($state, "showStartIcon", "showStartIcon") ? true : true) ? (
         <div
           data-plasmic-name={"startIconContainer"}
           data-plasmic-override={overrides.startIconContainer}
@@ -191,17 +221,17 @@ function PlasmicTextInput__RenderFunc(props: {
             [sty.startIconContainer___focusVisibleWithin]:
               triggers.focusVisibleWithin_root,
             [sty.startIconContainercolor_dark]: hasVariant(
-              variants,
+              $state,
               "color",
               "dark"
             ),
             [sty.startIconContainerisDisabled]: hasVariant(
-              variants,
+              $state,
               "isDisabled",
               "isDisabled"
             ),
             [sty.startIconContainershowStartIcon]: hasVariant(
-              variants,
+              $state,
               "showStartIcon",
               "showStartIcon"
             )
@@ -218,12 +248,12 @@ function PlasmicTextInput__RenderFunc(props: {
             value: args.startIcon,
             className: classNames(sty.slotTargetStartIcon, {
               [sty.slotTargetStartIconcolor_dark]: hasVariant(
-                variants,
+                $state,
                 "color",
                 "dark"
               ),
               [sty.slotTargetStartIconshowStartIcon]: hasVariant(
-                variants,
+                $state,
                 "showStartIcon",
                 "showStartIcon"
               )
@@ -239,25 +269,21 @@ function PlasmicTextInput__RenderFunc(props: {
         aria-labelledby={args["aria-labelledby"]}
         className={classNames(projectcss.all, projectcss.input, sty.input, {
           [sty.input___focusVisibleWithin]: triggers.focusVisibleWithin_root,
-          [sty.inputcolor_dark]: hasVariant(variants, "color", "dark"),
-          [sty.inputisDisabled]: hasVariant(
-            variants,
-            "isDisabled",
-            "isDisabled"
-          ),
+          [sty.inputcolor_dark]: hasVariant($state, "color", "dark"),
+          [sty.inputisDisabled]: hasVariant($state, "isDisabled", "isDisabled"),
           [sty.inputshowEndIcon]: hasVariant(
-            variants,
+            $state,
             "showEndIcon",
             "showEndIcon"
           ),
           [sty.inputshowStartIcon]: hasVariant(
-            variants,
+            $state,
             "showStartIcon",
             "showStartIcon"
           )
         })}
         disabled={
-          hasVariant(variants, "isDisabled", "isDisabled") ? true : undefined
+          hasVariant($state, "isDisabled", "isDisabled") ? true : undefined
         }
         name={args.name}
         placeholder={args.placeholder}
@@ -266,18 +292,18 @@ function PlasmicTextInput__RenderFunc(props: {
         value={args.value}
       />
 
-      {(hasVariant(variants, "showEndIcon", "showEndIcon") ? true : true) ? (
+      {(hasVariant($state, "showEndIcon", "showEndIcon") ? true : true) ? (
         <div
           data-plasmic-name={"endIconContainer"}
           data-plasmic-override={overrides.endIconContainer}
           className={classNames(projectcss.all, sty.endIconContainer, {
             [sty.endIconContainercolor_dark]: hasVariant(
-              variants,
+              $state,
               "color",
               "dark"
             ),
             [sty.endIconContainershowEndIcon]: hasVariant(
-              variants,
+              $state,
               "showEndIcon",
               "showEndIcon"
             )
@@ -294,12 +320,12 @@ function PlasmicTextInput__RenderFunc(props: {
             value: args.endIcon,
             className: classNames(sty.slotTargetEndIcon, {
               [sty.slotTargetEndIconcolor_dark]: hasVariant(
-                variants,
+                $state,
                 "color",
                 "dark"
               ),
               [sty.slotTargetEndIconshowEndIcon]: hasVariant(
-                variants,
+                $state,
                 "showEndIcon",
                 "showEndIcon"
               )

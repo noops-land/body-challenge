@@ -11,16 +11,6 @@
       }
     },
     {
-      "name": "Black 2",
-      "type": "color",
-      "value": "#010101",
-      "category": "color",
-      "meta": {
-        "projectId": "gBGqaUF3C5CQvEpDAhmCMe",
-        "id": "YjnrECuchx0"
-      }
-    },
-    {
       "name": "Primary",
       "type": "color",
       "value": "#FFCCD3",
@@ -48,116 +38,6 @@
       "meta": {
         "projectId": "gBGqaUF3C5CQvEpDAhmCMe",
         "id": "MF_LXv63B-_4YN"
-      }
-    },
-    {
-      "name": "White 2",
-      "type": "color",
-      "value": "#FCFBFB",
-      "category": "color",
-      "meta": {
-        "projectId": "gBGqaUF3C5CQvEpDAhmCMe",
-        "id": "TOKGnKgBnlh"
-      }
-    },
-    {
-      "name": "Yellow hover",
-      "type": "color",
-      "value": "#EFEC03",
-      "category": "color",
-      "meta": {
-        "projectId": "gBGqaUF3C5CQvEpDAhmCMe",
-        "id": "lBjXVORt2oRf-l"
-      }
-    },
-    {
-      "name": "Yellow hover 2",
-      "type": "color",
-      "value": "#EFEC03",
-      "category": "color",
-      "meta": {
-        "projectId": "gBGqaUF3C5CQvEpDAhmCMe",
-        "id": "EmwvAn5L2j4"
-      }
-    },
-    {
-      "name": "body challenge",
-      "type": "color",
-      "value": "#FF3985",
-      "category": "color",
-      "meta": {
-        "projectId": "gBGqaUF3C5CQvEpDAhmCMe",
-        "id": "WzqF_EJfnlm"
-      }
-    },
-    {
-      "name": "button",
-      "type": "color",
-      "value": "#FF85B4",
-      "category": "color",
-      "meta": {
-        "projectId": "gBGqaUF3C5CQvEpDAhmCMe",
-        "id": "sLAN-XBw6bGxh4"
-      }
-    },
-    {
-      "name": "button 2",
-      "type": "color",
-      "value": "#FF85B4",
-      "category": "color",
-      "meta": {
-        "projectId": "gBGqaUF3C5CQvEpDAhmCMe",
-        "id": "syAzc7Feg-t"
-      }
-    },
-    {
-      "name": "green",
-      "type": "color",
-      "value": "#00A95A",
-      "category": "color",
-      "meta": {
-        "projectId": "gBGqaUF3C5CQvEpDAhmCMe",
-        "id": "DKsGWeVvIyOVqp"
-      }
-    },
-    {
-      "name": "hover",
-      "type": "color",
-      "value": "#CB3A0899",
-      "category": "color",
-      "meta": {
-        "projectId": "gBGqaUF3C5CQvEpDAhmCMe",
-        "id": "-yRburcTdnqzU6"
-      }
-    },
-    {
-      "name": "hover pink",
-      "type": "color",
-      "value": "#FF3985",
-      "category": "color",
-      "meta": {
-        "projectId": "gBGqaUF3C5CQvEpDAhmCMe",
-        "id": "oWSh5836nTnSLz"
-      }
-    },
-    {
-      "name": "shadows",
-      "type": "color",
-      "value": "#FDFB75",
-      "category": "color",
-      "meta": {
-        "projectId": "gBGqaUF3C5CQvEpDAhmCMe",
-        "id": "bLo-PzGc92XwAb"
-      }
-    },
-    {
-      "name": "shadows 2",
-      "type": "color",
-      "value": "#FDFB75",
-      "category": "color",
-      "meta": {
-        "projectId": "gBGqaUF3C5CQvEpDAhmCMe",
-        "id": "QQlwYSYDk1n"
       }
     }
   ],
