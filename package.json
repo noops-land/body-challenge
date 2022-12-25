@@ -1,6 +1,6 @@
 {
-  "name": "tmp-cpa",
-  "version": "0.1.0",
+  "name": "body-challenge",
+  "version": "4.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
