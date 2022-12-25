@@ -463,10 +463,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@plasmicapp/cli@^0.1.188":
-  version "0.1.188"
-  resolved "https://registry.yarnpkg.com/@plasmicapp/cli/-/cli-0.1.188.tgz#7c35e09c1837b28b17133c23cac7d3c945a2b059"
-  integrity sha512-o4etjAa+zSUBzYUUlu75mdPcfDT6OPou3pRFD5TFLBeRgYjQWv48FGP1sUf7cf3yOqeiqWlUrCww5gY7Dmg91Q==
+"@plasmicapp/cli@^0.1.190":
+  version "0.1.190"
+  resolved "https://registry.yarnpkg.com/@plasmicapp/cli/-/cli-0.1.190.tgz#9b628134b9a5fec22a599200096e470de116606a"
+  integrity sha512-sySaO2nIylmNYhOfXmz9v+OWwtAHc2t8JPqOXpEbYpxpifyCnvZfIosRm/1bZa5WOz2QoSi8CYfgGXTB/rVthw==
   dependencies:
     "@babel/core" "^7.12.3"
     "@babel/generator" "^7.12.1"
